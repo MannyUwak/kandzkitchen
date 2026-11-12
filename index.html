@@ -1,0 +1,1247 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>KandzKitchen | Private Chef and Caterer in London</title>
+<meta name="description" content="KandzKitchen is a London private chef and caterer. Private dining, seafood boils, corporate and office catering, events, private chef for holiday stays and meal prep. London and surrounding areas, and abroad on request.">
+<meta name="theme-color" content="#1B3328">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KandzKitchen | Private Chef and Caterer in London">
+<meta property="og:description" content="Private dining, seafood boils, office catering, events and meal prep. Continental and African cooking from a London private chef.">
+<meta property="og:image" content="img/09-seafood-boil.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style>
+/* Concept: a kitchen docket. Condensed editorial headlines, ruled service list,
+   a deep-green menu band, and an order form that prints a live docket beside it. */
+:root{
+  --bg:#EDF0EA;
+  --surface:#F8FAF5;
+  --field:#FBFCF9;
+  --ink:#14261E;
+  --muted:#51635A;
+  --line:#C6D0C3;
+  --accent:#E3A21A;
+  --accent-text:#8F5A00;
+  --accent-ink:#14261E;
+  --deep:#1B3328;
+  --deep-ink:#EAEFE6;
+  --deep-muted:#A9B9AE;
+  --deep-line:#36513F;
+  --plate:#F8FAF6;
+  --plate-rim:#D3DAD0;
+  --beet:#7A2440;
+  --meat:#6B2F2A;
+  --meat-core:#B4585A;
+  --leaf:#4C7F4A;
+  --sauce:#3A1620;
+  --display:'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif;
+  --body:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'DM Mono',ui-monospace,'SFMono-Regular',Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1813;--surface:#15241C;--field:#101C16;--ink:#E7ECE3;--muted:#9AAA9F;--line:#2B3D33;
+    --accent:#EDB02A;--accent-text:#EDB02A;--deep:#1B3427;--deep-ink:#EAEFE6;--deep-muted:#A9BBAF;--deep-line:#3A5645;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1813;--surface:#15241C;--field:#101C16;--ink:#E7ECE3;--muted:#9AAA9F;--line:#2B3D33;
+  --accent:#EDB02A;--accent-text:#EDB02A;--deep:#1B3427;--deep-ink:#EAEFE6;--deep-muted:#A9BBAF;--deep-line:#3A5645;
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.55;-webkit-text-size-adjust:100%}
+img,svg{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+.in{width:100%;max-width:1180px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.band{padding-block:clamp(56px,9vw,112px)}
+.band--deep{background:var(--deep);color:var(--deep-ink)}
+.band--alt{background:var(--surface);border-block:1px solid var(--line)}
+.rule{border-top:1px solid var(--line)}
+
+.eyebrow{margin:0;font:500 .75rem/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.band--deep .eyebrow{color:var(--deep-muted)}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance}
+h1{font-weight:800;font-stretch:78%;font-size:clamp(3rem,11vw,7rem);line-height:.92;letter-spacing:-.035em}
+h1 mark{color:inherit;background:linear-gradient(transparent 64%,var(--accent) 64% 92%,transparent 92%);-webkit-box-decoration-break:clone;box-decoration-break:clone;padding-inline:.04em}
+h2{font-weight:750;font-stretch:82%;font-size:clamp(2rem,6vw,3.6rem);line-height:1;letter-spacing:-.03em}
+h3{font-weight:700;font-stretch:90%;font-size:1.5rem;line-height:1.1;letter-spacing:-.015em}
+p{margin:0}
+.lede{color:var(--muted);max-width:60ch;font-size:1.15rem}
+.band--deep .lede{color:var(--deep-muted)}
+.shead{display:grid;gap:14px;max-width:46rem;margin-bottom:clamp(28px,5vw,56px)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;font:600 1rem var(--body);border-radius:3px;border:2px solid currentColor;text-decoration:none;cursor:pointer;background:transparent;color:inherit;text-align:center}
+.btn--primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn--sm{min-height:40px;padding:0 16px;font-size:.95rem}
+@media (prefers-reduced-motion:no-preference){.btn{transition:transform .15s ease}.btn:hover{transform:translateY(-1px)}}
+
+/* header */
+html{scroll-padding-top:calc(var(--hdr,72px) + 8px)}
+.top-band{position:sticky;top:0;z-index:40;background:var(--bg);border-bottom:1px solid var(--line)}
+@media (prefers-reduced-motion:no-preference){.top-band{transition:box-shadow .2s ease}}
+.top-band.is-stuck{box-shadow:0 8px 24px rgba(10,20,15,.12)}
+.xmas{background:var(--accent);color:var(--accent-ink);font-size:.95rem;padding-block:10px;text-align:center}
+.xmas a{color:inherit;font-weight:600}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 28px;padding-block:16px}
+.brand{font-family:var(--display);font-weight:800;font-stretch:80%;font-size:1.6rem;letter-spacing:-.02em;text-decoration:none}
+.brand span{color:var(--accent-text)}
+.top nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 22px}
+.top nav a:not(.btn){font-weight:500;font-size:.95rem;text-decoration:none}
+.top nav a:not(.btn):hover{text-decoration:underline;text-underline-offset:4px}
+@media (max-width:760px){
+  .top{padding-block:10px 0;gap:6px 16px}
+  .top nav{flex-wrap:nowrap;overflow-x:auto;width:calc(100% + 32px);margin-inline:-16px;padding:6px 16px 10px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .top nav::-webkit-scrollbar{display:none}
+  .top nav a{white-space:nowrap;flex:none}
+}
+
+/* hero */
+.hero-band{padding-block:clamp(36px,7vw,88px)}
+.hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(28px,5vw,72px);align-items:center}
+.hero-copy{display:grid;gap:24px;min-width:0}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px 40px;margin:8px 0 0;padding-top:20px;border-top:1px solid var(--line)}
+.facts dt{font:500 .72rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.facts dd{margin:2px 0 0;font-family:var(--display);font-weight:750;font-stretch:85%;font-size:1.7rem;line-height:1.1}
+.facts small{font:500 .8rem var(--mono);color:var(--muted)}
+.hero-art{margin:0;background:var(--deep);display:grid;overflow:hidden;border-radius:3px;min-width:0}
+.hs-stage{position:relative;width:100%;aspect-ratio:1000/1776;max-height:min(80vh,700px);overflow:hidden;touch-action:pan-y}
+.hs-stage img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;display:block;opacity:1}
+.hs-stage img.is-out{opacity:0}
+@media (prefers-reduced-motion:no-preference){.hs-stage img{transition:opacity .28s ease}}
+.hs-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:48px;height:48px;display:grid;place-items:center;border-radius:99px;border:1px solid rgba(234,239,230,.55);background:rgba(20,38,30,.72);color:#EAEFE6;cursor:pointer;padding:0;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.hs-btn:hover{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.hs-btn svg{width:22px;height:22px}
+.hs-prev{left:12px}
+.hs-next{right:12px}
+.hero-art figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font:500 .72rem var(--mono);letter-spacing:.06em;color:var(--deep-ink);border-top:1px solid var(--deep-line);padding:10px 14px}
+.hs-count{color:var(--deep-muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.p-plate{fill:var(--plate);stroke:var(--plate-rim);stroke-width:2}
+.p-rim{fill:none;stroke:var(--plate-rim);stroke-width:1.5}
+.p-puree{fill:none;stroke:var(--beet);stroke-width:30;stroke-linecap:round}
+.p-meat{fill:var(--meat)}
+.p-core{fill:var(--meat-core)}
+.p-leaf{fill:var(--leaf)}
+.p-dot{fill:var(--sauce)}
+.p-crumb{fill:var(--accent)}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 32px}
+.svc{display:grid;gap:12px;align-content:start;border-top:2px solid var(--ink);padding-top:20px}
+.svc p{color:var(--muted)}
+.svc .spec{color:var(--accent-text)}
+.svc a.more{font-weight:600;text-underline-offset:4px;width:fit-content}
+.spec{font:500 .78rem/1.5 var(--mono);letter-spacing:.04em}
+
+/* gallery */
+.gallery-wide{margin:0 0 14px}
+.gallery-wide img{width:100%;height:auto;display:block;border-radius:3px;background:var(--line);cursor:zoom-in}
+.gallery{columns:4;column-gap:14px}
+.gallery figure{margin:0 0 22px;break-inside:avoid;min-width:0}
+.gallery img{width:100%;height:auto;display:block;border-radius:3px;background:var(--line);cursor:zoom-in}
+.gallery figcaption,.gallery-wide figcaption{font:500 .72rem/1.4 var(--mono);letter-spacing:.04em;color:var(--muted);margin-top:8px}
+.gallery-more{margin-top:32px}
+.lb{position:fixed;inset:0;z-index:50;background:var(--deep);color:var(--deep-ink);display:grid;place-items:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb-fig{margin:0;display:grid;gap:12px;justify-items:center;max-width:100%;min-height:0}
+.lb-fig img{max-width:100%;max-height:calc(100vh - 120px);width:auto;height:auto;object-fit:contain;border-radius:3px}
+.lb-fig figcaption{font:500 .8rem/1.4 var(--mono);text-align:center}
+.lb-close{position:absolute;top:max(12px,env(safe-area-inset-top,0px));right:max(12px,env(safe-area-inset-right,0px));width:48px;height:48px;border-radius:99px;border:1px solid var(--deep-ink);background:var(--deep);color:var(--deep-ink);font:400 1.8rem/1 var(--body);cursor:pointer}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0 24px}
+.chip{font:600 .9rem var(--body);min-height:42px;padding:0 16px;border-radius:99px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+
+/* menus */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.tab{font:600 .95rem var(--body);min-height:44px;padding:0 18px;border-radius:3px;border:1px solid var(--deep-line);background:transparent;color:var(--deep-ink);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.mhead{display:grid;gap:6px;margin-bottom:8px}
+.mmeta{font:500 .8rem var(--mono);letter-spacing:.06em;color:var(--deep-muted)}
+.dish{display:grid;grid-template-columns:9rem minmax(0,1fr);gap:6px 24px;padding-block:16px;border-top:1px solid var(--deep-line);align-items:baseline}
+.dish .course{font:500 .72rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--deep-muted)}
+.dish .name{font-family:var(--display);font-weight:650;font-stretch:90%;font-size:1.3rem;line-height:1.2}
+.dish .desc{color:var(--deep-muted);margin-top:2px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;min-width:3rem}
+.tag{font:500 .68rem var(--mono);border:1px solid currentColor;border-radius:99px;padding:1px 8px;color:var(--deep-muted)}
+.mfoot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;border-top:1px solid var(--deep-line);padding-top:24px}
+.legend{font:500 .75rem/1.6 var(--mono);color:var(--deep-muted)}
+.mnote{color:var(--deep-muted);max-width:60ch;margin-block:10px 8px}
+
+/* order */
+.order-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:clamp(28px,4vw,56px);align-items:start}
+form{display:grid;gap:32px;min-width:0}
+fieldset{border:0;margin:0;padding:0;min-width:0;display:grid;gap:14px}
+legend{padding:0;font:500 .75rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.fl{display:grid;gap:6px;font-weight:500;font-size:.95rem;min-width:0}
+input[type=text],input[type=email],input[type=tel],input[type=date],input[type=number],select,textarea{font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--line);border-radius:3px;padding:11px 12px;min-height:46px;width:100%}
+textarea{resize:vertical}
+.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.choice{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}
+.card{position:relative;display:grid;gap:4px;align-content:start;padding:14px;border:1px solid var(--line);border-radius:3px;background:var(--field);cursor:pointer;min-width:0}
+.card input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.card strong{font-family:var(--display);font-weight:700;font-stretch:90%;font-size:1.1rem;line-height:1.15}
+.card span{font:500 .75rem/1.4 var(--mono);color:var(--muted)}
+.card:has(input:checked){border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink);background:var(--surface)}
+.card:has(input:focus-visible){outline:3px solid var(--accent);outline-offset:2px}
+.hint{font-size:.85rem;color:var(--muted)}
+.stepper{display:inline-flex;max-width:190px}
+.stepper button{width:46px;min-height:46px;border:1px solid var(--line);background:var(--field);color:var(--ink);font:500 1.25rem var(--mono);cursor:pointer}
+.stepper button:first-child{border-radius:3px 0 0 3px}
+.stepper button:last-child{border-radius:0 3px 3px 0}
+.stepper input{border-radius:0;text-align:center;border-inline:0;-moz-appearance:textfield;appearance:textfield;min-width:0}
+.stepper input::-webkit-outer-spin-button,.stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.extra{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 16px;padding-block:14px;border-top:1px solid var(--line);align-items:start}
+.x-label{display:flex;gap:12px;align-items:flex-start;cursor:pointer;min-width:0}
+.x-label input{width:22px;height:22px;margin:2px 0 0;accent-color:var(--accent-text);flex:none}
+.x-label strong{display:block;font-weight:600}
+.x-label small{display:block;color:var(--muted);font-size:.85rem}
+.x-price{font:500 .8rem var(--mono);white-space:nowrap;padding-top:3px;color:var(--muted)}
+.x-qtyrow{grid-column:1/-1;display:flex;align-items:center;gap:12px;padding-left:34px}
+.x-qtyrow label{font-size:.9rem;font-weight:500}
+.x-qtyrow input{width:84px}
+.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px}
+.checks label{display:flex;gap:10px;align-items:center;font-size:.95rem}
+.checks input{width:20px;height:20px;accent-color:var(--accent-text);margin:0}
+.submit{display:grid;gap:12px;justify-items:start}
+
+.docket{position:sticky;top:calc(var(--hdr,72px) + 20px);background:var(--surface);border:1px solid var(--line);border-bottom:0;padding:24px 22px 30px;font-family:var(--mono);font-size:.85rem;line-height:1.5;min-width:0}
+.docket::after{content:"";position:absolute;left:-1px;right:-1px;bottom:-12px;height:12px;background:linear-gradient(135deg,var(--surface) 50%,transparent 50%) 0 0/16px 12px repeat-x,linear-gradient(225deg,var(--surface) 50%,transparent 50%) 0 0/16px 12px repeat-x}
+.docket h3{font:600 .78rem var(--mono);letter-spacing:.16em;text-transform:uppercase}
+.dk-ref{color:var(--muted);margin-bottom:14px}
+.dk-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding-block:12px;border-block:1px dashed var(--line)}
+.dk-meta span{display:block;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.dk-meta div{overflow-wrap:anywhere}
+.dk-lines{display:grid;gap:10px;padding-block:14px;border-bottom:1px dashed var(--line)}
+.dk-line{display:flex;justify-content:space-between;gap:14px}
+.dk-line small{display:block;color:var(--muted)}
+.dk-line b{font-weight:500;white-space:nowrap;font-variant-numeric:tabular-nums}
+.dk-total{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-top:14px}
+.dk-total span{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.dk-total strong{font-family:var(--display);font-weight:800;font-stretch:85%;font-size:2.7rem;line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.dk-sub{text-align:right;color:var(--muted)}
+.dk-note{margin-top:16px;font-family:var(--body);font-size:.85rem;color:var(--muted)}
+
+.sent{display:grid;gap:14px;border:2px solid var(--ink);background:var(--surface);padding:22px;margin-top:28px;scroll-margin-top:24px}
+.sent textarea{font:400 .82rem/1.5 var(--mono);min-height:15rem}
+.sent .acts{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.addr{font:500 1rem var(--mono);user-select:all;overflow-wrap:anywhere}
+
+.rvs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px}
+.rv{margin:0;padding:24px;border:1px solid var(--line);display:grid;gap:14px;align-content:start;min-width:0}
+.rv blockquote{margin:0;font-family:var(--display);font-weight:600;font-stretch:90%;font-size:1.15rem;line-height:1.35;color:var(--ink)}
+.rv figcaption{font:500 .78rem var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,6vw,88px);align-items:start}
+.about-copy{display:grid;gap:16px;min-width:0}
+.about-copy p{color:var(--muted);max-width:56ch}
+.about-copy p:first-of-type{color:var(--ink);font-size:1.2rem}
+.about-photo{margin:0;min-width:0}
+.about-photo img{display:block;width:100%;height:auto}
+.about-copy .eyebrow{margin:0}
+.faq ul{margin:10px 0 10px 18px;padding:0;color:var(--muted);display:grid;gap:6px}
+.faq ul strong{color:var(--ink)}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;padding-block:18px;border-top:1px solid var(--line)}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:36px;height:36px;background:var(--accent);color:var(--accent-ink);font:500 .9rem var(--mono)}
+.steps strong{display:block;font-family:var(--display);font-weight:700;font-stretch:90%;font-size:1.2rem;line-height:1.2;margin-bottom:2px}
+.steps span{color:var(--muted)}
+
+/* faq */
+.faq{max-width:52rem}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:20px;font-family:var(--display);font-weight:650;font-stretch:90%;font-size:1.25rem;line-height:1.2}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 1.5rem var(--mono);flex:none}
+details[open] summary::after{content:"\2212"}
+details p{color:var(--muted);padding-bottom:22px;max-width:60ch}
+
+/* contact */
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,6vw,88px);align-items:end}
+.contact dl{display:grid;gap:18px;margin:0}
+.contact dt{font:500 .72rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--deep-muted)}
+.contact dd{margin:2px 0 0;font-family:var(--display);font-weight:650;font-stretch:90%;font-size:1.5rem;line-height:1.2;overflow-wrap:anywhere}
+.contact dd.sel{user-select:all}
+.foot{background:var(--deep);color:var(--deep-muted);border-top:1px solid var(--deep-line);padding-block:24px;font:400 .78rem/1.6 var(--mono)}
+.foot .in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+
+@media (max-width:900px){
+  .gallery{columns:3}
+  .order-grid{grid-template-columns:minmax(0,1fr)}
+  .docket{position:relative;top:auto}
+  .about,.contact{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:860px){
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .hero-art{max-width:460px}
+  .svc-grid{grid-template-columns:minmax(0,1fr);gap:28px}
+}
+@media (max-width:620px){
+  .gallery{columns:2}
+  .dish{grid-template-columns:minmax(0,1fr);gap:4px}
+  .row2,.checks{grid-template-columns:minmax(0,1fr)}
+  .facts{gap:12px 28px}
+}
+</style>
+</head>
+<body>
+
+<header class="band top-band" style="padding-block:0">
+  <div class="in top">
+    <a class="brand" href="#top">Kandz<span>Kitchen</span></a>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#menus">Menus</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a href="#how">How it works</a>
+      <a class="btn btn--primary btn--sm" href="#order">Book</a>
+    </nav>
+  </div>
+</header>
+<aside class="xmas"><div class="in"><strong>Christmas orders and parties are open.</strong> Last orders on 20 December. <a href="#order">Book now</a></div></aside>
+
+<main>
+  <section class="band hero-band" id="top" style="padding-block:clamp(36px,7vw,88px)">
+    <div class="in hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Private chef and caterer · based in London, cooking anywhere</p>
+        <h1>Food for <mark>every occasion</mark>.</h1>
+        <p class="lede">From dinner at your table to office lunches, seafood boils and meal prep. Continental and African cooking from a London private chef. We shop, cook, serve and clear up. London and surrounding areas, and abroad on request.</p>
+        <div class="cta">
+          <a class="btn btn--primary" href="#order">Build your order</a>
+          <a class="btn" href="#menus">Read the menus</a>
+        </div>
+        <dl class="facts">
+          <div><dt>Guests</dt><dd>2 or more</dd></div>
+          <div><dt>Private dining from</dt><dd>£65 <small>per head</small></dd></div>
+          <div><dt>Notice</dt><dd>24 hours</dd></div>
+        </dl>
+      </div>
+      <figure class="hero-art" id="heroShow" role="region" aria-roledescription="carousel" aria-label="Dishes from the kitchen">
+        <div class="hs-stage" id="hsStage">
+          <img id="hsImg" src="img/09-seafood-boil.jpg" width="1000" height="1776" alt="Crab legs, lobster tail and corn in a spiced sauce on a white platter" fetchpriority="high">
+          <button type="button" class="hs-btn hs-prev" id="hsPrev" aria-label="Previous dish"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button type="button" class="hs-btn hs-next" id="hsNext" aria-label="Next dish"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+        <figcaption><span id="hsCap" aria-live="polite">Seafood boil with crab, lobster and corn</span><span class="hs-count" id="hsCount">1 / 9</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band rule" id="services" style="padding-block:clamp(56px,9vw,112px)">
+    <div class="in">
+      <div class="shead">
+        <p class="eyebrow">What we cook</p>
+        <h2>Ways to eat with us.</h2>
+      </div>
+      <div class="svc-grid">
+        <article class="svc">
+          <h3>Private dining</h3>
+          <p>Dinner at your table with as many courses as you like, from two to seven or more. We cook, plate and serve. Want to sit closer to the cooking? Upgrade to a chef's table from £80 per head, where the chef plates each course in front of your guests and talks them through every dish.</p>
+          <p class="spec">Any number of guests · from £65 per head · 24 hours' notice</p>
+        </article>
+        <article class="svc">
+          <h3>Seafood boil</h3>
+          <p>Our signature seafood boil: mussels, lobster, crab, king prawns, boiled eggs, smoked sausage and corn on the cob. Choose Cajun garlic butter, butter sauce or onion garlic butter sauce, and add ramen noodles if you like. Each boil serves 2 to 4 people, so for a bigger group order two or more.</p>
+          <p class="spec">£85 per boil, serves 2 to 4 people · 24 hours' notice</p>
+        </article>
+        <article class="svc">
+          <h3>Corporate and office</h3>
+          <p>Food for offices and businesses: working lunches, team days, boardroom dining and staff events, as individual boxes, sharing platters or a full buffet. Vegetarian and dietary needs covered.</p>
+          <p class="spec">Any number of people · price on request · 24 hours' notice</p>
+        </article>
+        <article class="svc">
+          <h3>Event catering</h3>
+          <p>Food for birthdays, baby showers, weddings and parties, from buffets to BBQ stations. We cook, serve and clear up.</p>
+          <p class="spec">Any number of guests · price on request · 24 hours' notice</p>
+        </article>
+        <article class="svc">
+          <h3>Private chef for your stay</h3>
+          <p>Staying in an Airbnb or holiday let? We come to you, cook dinner in your kitchen and clear up, so you eat well without leaving the house.</p>
+          <p class="spec">Any number of guests · from £55 per head · 24 hours' notice</p>
+          <a class="more" href="https://www.airbnb.co.uk/services/6214720" target="_blank" rel="noopener">See us on Airbnb</a>
+        </article>
+        <article class="svc">
+          <h3>Meal prep</h3>
+          <p>Meals cooked and packed in containers, ready for you to heat and eat. Tell us what you like and how many portions you need.</p>
+          <p class="spec">Any number of portions · from £250 · 24 hours' notice</p>
+        </article>
+      </div>
+      <p class="lede" style="margin-top:40px">Something else in mind? <a href="#contact">Get in touch</a> and we will build a menu around it.</p>
+    </div>
+  </section>
+
+    <section class="band rule" id="gallery" style="padding-block:clamp(56px,9vw,112px)">
+    <div class="in">
+      <div class="shead">
+        <p class="eyebrow">From the kitchen</p>
+        <h2>What we cook.</h2>
+        <p class="lede">African and Continental food, from jollof rice and seafood boils to fresh pasta, grilled meat and desserts.</p>
+      </div>
+      <figure class="gallery-wide">
+        <img src="img/03-meal-prep-boxes.jpg" width="1000" height="562" loading="lazy" decoding="async" alt="Twelve meal prep boxes of jollof rice, roast chicken and fried plantain">
+        <figcaption>Meal prep: jollof rice, roast chicken and fried plantain</figcaption>
+      </figure>
+      <div class="filters" role="group" aria-label="Filter photos">
+        <button type="button" class="chip" data-f="all" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-f="african" aria-pressed="false">African</button>
+        <button type="button" class="chip" data-f="seafood" aria-pressed="false">Seafood</button>
+        <button type="button" class="chip" data-f="meat" aria-pressed="false">Meat and chicken</button>
+        <button type="button" class="chip" data-f="pasta" aria-pressed="false">Pasta and risotto</button>
+        <button type="button" class="chip" data-f="sides" aria-pressed="false">Sides and bites</button>
+        <button type="button" class="chip" data-f="sweet" aria-pressed="false">Sweet</button>
+      </div>
+      <div class="gallery" id="gallery-grid">
+        <figure data-cat="african"><img src="img/06-jollof-okra-beef.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Jollof rice, okra soup and beef stew"><figcaption>Jollof rice, okra soup and beef stew</figcaption></figure>
+        <figure data-cat="sweet"><img src="img/18-tiramisu-lemon.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Tiramisu and lemon desserts"><figcaption>Tiramisu and lemon desserts</figcaption></figure>
+        <figure data-cat="seafood"><img src="img/32-scallops.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Scallops in garlic butter"><figcaption>Scallops in garlic butter</figcaption></figure>
+        <figure data-cat="meat"><img src="img/37-bbq-chicken.jpg" width="1000" height="1038" loading="lazy" decoding="async" alt="Charcoal-grilled BBQ chicken"><figcaption>Charcoal-grilled BBQ chicken</figcaption></figure>
+        <figure data-cat="african"><img src="img/35-moi-moi.jpg" width="1000" height="1158" loading="lazy" decoding="async" alt="Moi moi with egg"><figcaption>Moi moi with egg</figcaption></figure>
+        <figure data-cat="seafood pasta"><img src="img/31-langoustine-spaghetti.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Langoustine on garlic spaghetti"><figcaption>Langoustine on garlic spaghetti</figcaption></figure>
+        <figure data-cat="meat"><img src="img/30-glazed-chops-mash.jpg" width="638" height="660" loading="lazy" decoding="async" alt="Glazed chops on creamy mash"><figcaption>Glazed chops on creamy mash</figcaption></figure>
+        <figure data-cat="seafood"><img src="img/29-prawns-mango.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Prawns with mango salsa on rice noodles"><figcaption>Prawns with mango salsa on rice noodles</figcaption></figure>
+        <figure data-cat="african"><img src="img/34-soup-chilli-herb.jpg" width="1000" height="1017" loading="lazy" decoding="async" alt="Abula: amala with gbegiri, ewedu and assorted meat stew"><figcaption>Abula: amala with gbegiri, ewedu and assorted meat stew</figcaption></figure>
+        <figure data-cat="meat"><img src="img/05-roast-chicken-thighs.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Glazed roast chicken thighs"><figcaption>Glazed roast chicken thighs</figcaption></figure>
+        <figure data-cat="pasta"><img src="img/16-mushroom-risotto.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Creamy mushroom risotto"><figcaption>Creamy mushroom risotto</figcaption></figure>
+        <figure data-cat="african"><img src="img/33-jollof-rice.jpg" width="1000" height="969" loading="lazy" decoding="async" alt="Jollof rice"><figcaption>Jollof rice</figcaption></figure>
+        <figure data-cat="african sweet" hidden><img src="img/19-puff-puff.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Puff puff"><figcaption>Puff puff</figcaption></figure>
+        <figure data-cat="seafood" hidden><img src="img/09-seafood-boil.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Seafood boil with crab, lobster and corn"><figcaption>Seafood boil with crab, lobster and corn</figcaption></figure>
+        <figure data-cat="meat" hidden><img src="img/24-katsu-curry.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Chicken katsu curry"><figcaption>Chicken katsu curry</figcaption></figure>
+        <figure data-cat="african" hidden><img src="img/36-meat-tripe-soup.jpg" width="1000" height="1258" loading="lazy" decoding="async" alt="Light soup with fufu and assorted goat meat"><figcaption>Light soup with fufu and assorted goat meat</figcaption></figure>
+        <figure data-cat="meat" hidden><img src="img/26-chilli-wings.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Hot honey chicken wings"><figcaption>Hot honey chicken wings</figcaption></figure>
+        <figure data-cat="pasta" hidden><img src="img/10-tagliatelle-carbonara.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Tagliatelle carbonara"><figcaption>Tagliatelle carbonara</figcaption></figure>
+        <figure data-cat="meat" hidden><img src="img/25-cheeseburger.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Double cheeseburger with caramelised onions"><figcaption>Double cheeseburger with caramelised onions</figcaption></figure>
+        <figure data-cat="african meat" hidden><img src="img/20-pepper-stew-meat.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Asun (peppered goat meat)"><figcaption>Asun (peppered goat meat)</figcaption></figure>
+        <figure data-cat="meat" hidden><img src="img/21-chicken-spinach-potatoes.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="Chicken with spinach, vine tomatoes and roast potatoes"><figcaption>Chicken with spinach, vine tomatoes and roast potatoes</figcaption></figure>
+        <figure data-cat="sides" hidden><img src="img/22-caprese.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Tomato and mozzarella with balsamic"><figcaption>Tomato and mozzarella with balsamic</figcaption></figure>
+        <figure data-cat="african sides" hidden><img src="img/38-plantain-chips.jpg" width="1000" height="1116" loading="lazy" decoding="async" alt="Plantain chips"><figcaption>Plantain chips</figcaption></figure>
+        <figure data-cat="meat" hidden><img src="img/08-meatballs-tomato.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Meatballs in tomato sauce"><figcaption>Meatballs in tomato sauce</figcaption></figure>
+        <figure data-cat="meat" hidden><img src="img/12-chicken-pancakes.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Fried chicken and pancakes"><figcaption>Fried chicken and pancakes</figcaption></figure>
+        <figure data-cat="sides" hidden><img src="img/14-pot-pies.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Individual cheese-topped fish pies"><figcaption>Individual cheese-topped fish pies</figcaption></figure>
+        <figure data-cat="sides" hidden><img src="img/27-veg-noodles.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Vegetable stir-fry noodles"><figcaption>Vegetable stir-fry noodles</figcaption></figure>
+        <figure data-cat="pasta" hidden><img src="img/07-tomato-spaghetti-basil.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Spaghetti with cherry tomatoes and basil"><figcaption>Spaghetti with cherry tomatoes and basil</figcaption></figure>
+        <figure data-cat="sides" hidden><img src="img/28-quinoa-greens.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Spiced quinoa with greens"><figcaption>Spiced quinoa with greens</figcaption></figure>
+        <figure data-cat="sides" hidden><img src="img/23-cucumber-salad.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Chilli sesame cucumber salad"><figcaption>Chilli sesame cucumber salad</figcaption></figure>
+        <figure data-cat="pasta" hidden><img src="img/15-fusilli-tomato.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Fusilli in tomato sauce"><figcaption>Fusilli in tomato sauce</figcaption></figure>
+        <figure data-cat="meat" hidden><img src="img/13-crispy-chicken-bowl.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Crispy chicken bowl"><figcaption>Crispy chicken bowl</figcaption></figure>
+        <figure data-cat="meat" hidden><img src="img/02-glazed-chicken-breast.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="Roast chicken in gravy with parsley"><figcaption>Roast chicken in gravy with parsley</figcaption></figure>
+        <figure data-cat="pasta" hidden><img src="img/17-carbonara-pancetta.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Creamy tagliatelle with crispy bacon"><figcaption>Creamy tagliatelle with crispy bacon</figcaption></figure>
+        <figure data-cat="pasta" hidden><img src="img/11-tomato-spaghetti-plate.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Tomato spaghetti"><figcaption>Tomato spaghetti</figcaption></figure>
+        <figure data-cat="sides" hidden><img src="img/01-potato-bake.jpg" width="1000" height="1333" loading="lazy" decoding="async" alt="Cottage pie"><figcaption>Cottage pie</figcaption></figure>
+        <figure data-cat="sides" hidden><img src="img/04-toasted-ham-sandwich.jpg" width="1000" height="1776" loading="lazy" decoding="async" alt="Ham and cheese sandwich with mustard sauce"><figcaption>Ham and cheese sandwich with mustard sauce</figcaption></figure>
+      </div>
+      <div class="gallery-more" id="moreWrap"><button type="button" class="btn" id="moreBtn">See more photos</button></div>
+    </div>
+  </section>
+
+  <section class="band band--deep" id="menus" style="padding-block:clamp(56px,9vw,112px)">
+    <div class="in">
+      <div class="shead">
+        <p class="eyebrow">Sample menus</p>
+        <h2>The menus.</h2>
+        <p class="lede">We cook with the seasons, so dishes change. Corporate and chef's table menus are put together around your brief. Tell us what you cannot eat and we will adjust every course.</p>
+      </div>
+      <div class="tabs" id="tabs" role="tablist" aria-label="Menus"></div>
+      <div id="panels"></div>
+    </div>
+  </section>
+
+  <section class="band" id="order" style="padding-block:clamp(56px,9vw,112px)">
+    <div class="in">
+      <div class="shead">
+        <p class="eyebrow">Order and enquire</p>
+        <h2>Build your order.</h2>
+        <p class="lede">Choose a service, add what you need and watch the docket update. Nothing is sent until you finish at the bottom.</p>
+      </div>
+      <div class="order-grid">
+        <div>
+          <form id="orderForm">
+            <fieldset>
+              <legend>Service</legend>
+              <div class="choice" role="radiogroup" aria-label="Service">
+                <label class="card"><input type="radio" name="service" value="dinner" checked><strong>Private dining</strong><span>From £65 per head</span></label>
+                <label class="card"><input type="radio" name="service" value="chef"><strong>Chef's table</strong><span>From £80 per head</span></label>
+                <label class="card"><input type="radio" name="service" value="seafood"><strong>Seafood boil</strong><span>£85 per boil · serves 2 to 4</span></label>
+                <label class="card"><input type="radio" name="service" value="corporate"><strong>Corporate and office</strong><span>Price on request</span></label>
+                <label class="card"><input type="radio" name="service" value="event"><strong>Event catering</strong><span>Price on request</span></label>
+                <label class="card"><input type="radio" name="service" value="airbnb"><strong>Private chef for your stay</strong><span>From £55 per head</span></label>
+                <label class="card"><input type="radio" name="service" value="mealprep"><strong>Meal prep</strong><span>From £250</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Guests, date and place</legend>
+              <div class="fl">
+                <label for="guests" id="guestsLabel">Number of guests</label>
+                <div class="stepper">
+                  <button type="button" data-step="-1" aria-label="Fewer guests">−</button>
+                  <input type="number" id="guests" inputmode="numeric" min="2" value="4">
+                  <button type="button" data-step="1" aria-label="More guests">+</button>
+                </div>
+                <span class="hint" id="guestHint"></span>
+              </div>
+              <div class="fl" id="coursesField">
+                <label for="courses">Number of courses</label>
+                <input type="number" id="courses" inputmode="numeric" min="2" value="4" style="max-width:190px">
+                <span class="hint">Two, three, four, five, six, seven or more. You choose.</span>
+              </div>
+              <div class="row2" id="corpFields" hidden>
+                <label class="fl" for="company">Company name<input type="text" id="company" autocomplete="organization"></label>
+                <label class="fl" for="freq">How often
+                  <select id="freq">
+                    <option>One-off</option>
+                    <option>Weekly</option>
+                    <option>Monthly</option>
+                    <option>Not sure yet</option>
+                  </select>
+                </label>
+              </div>
+              <div class="row2" id="seafoodFields" hidden>
+                <label class="fl" for="sauce">Sauce
+                  <select id="sauce">
+                    <option>Cajun garlic butter</option>
+                    <option>Butter sauce</option>
+                    <option>Onion garlic butter sauce</option>
+                  </select>
+                </label>
+                <label class="fl" for="ramen">Ramen noodles
+                  <select id="ramen">
+                    <option>No ramen noodles</option>
+                    <option value="Add ramen noodles">Add ramen noodles (+£3.50 per boil)</option>
+                  </select>
+                </label>
+              </div>
+              <div class="row2">
+                <label class="fl" for="date">Date<input type="date" id="date" required></label>
+                <label class="fl" for="slot">Time of day
+                  <select id="slot">
+                    <option>Evening</option>
+                    <option>Lunchtime</option>
+                    <option>Morning</option>
+                  </select>
+                </label>
+              </div>
+              <label class="fl" for="postcode">Where we will cook
+                <input type="text" id="postcode" placeholder="Postcode, or city and country" required>
+              </label>
+              <span class="hint">We cook anywhere, in the UK or abroad. We confirm any travel cost in your quote.</span>
+            </fieldset>
+
+            <fieldset>
+              <legend>Extras</legend>
+              <div>
+                <div class="extra" data-name="Canapé reception" data-kind="pp">
+                  <label class="x-label"><input type="checkbox" class="x-on" id="x-canape"><span><strong>Canapé reception</strong><small>Served before the meal</small></span></label>
+                  <span class="x-price">Price on request</span>
+                </div>
+                <div class="extra" data-name="Wine pairing" data-kind="pp">
+                  <label class="x-label"><input type="checkbox" class="x-on" id="x-wine"><span><strong>Wine pairing</strong><small>A glass chosen for each course</small></span></label>
+                  <span class="x-price">Price on request</span>
+                </div>
+                <div class="extra" data-name="Desserts" data-kind="pp">
+                  <label class="x-label"><input type="checkbox" class="x-on" id="x-dessert"><span><strong>Desserts</strong><small>Plated or boxed, to finish the meal</small></span></label>
+                  <span class="x-price">Price on request</span>
+                </div>
+                <div class="extra" data-name="Crockery, glassware and linen" data-kind="pp">
+                  <label class="x-label"><input type="checkbox" class="x-on" id="x-hire"><span><strong>Crockery, glassware and linen</strong><small>Delivered, set out and collected</small></span></label>
+                  <span class="x-price">Price on request</span>
+                </div>
+                <div class="extra" data-name="Waiting staff" data-kind="each" data-unit="servers">
+                  <label class="x-label"><input type="checkbox" class="x-on" id="x-staff"><span><strong>Waiting staff</strong><small>Serve and clear during the meal</small></span></label>
+                  <span class="x-price">Price on request</span>
+                  <div class="x-qtyrow" hidden><label for="q-staff">Servers</label><input type="number" class="x-qty" id="q-staff" min="1" value="1"></div>
+                </div>
+                <div class="extra" data-name="Grazing board" data-kind="each" data-unit="boards">
+                  <label class="x-label"><input type="checkbox" class="x-on" id="x-board"><span><strong>Grazing board</strong><small>Cheese, charcuterie and pickles</small></span></label>
+                  <span class="x-price">Price on request</span>
+                  <div class="x-qtyrow" hidden><label for="q-board">Boards</label><input type="number" class="x-qty" id="q-board" min="1" value="1"></div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Dietary needs</legend>
+              <div class="checks" id="diets">
+                <label><input type="checkbox" value="Vegetarian"> Vegetarian</label>
+                <label><input type="checkbox" value="Vegan"> Vegan</label>
+                <label><input type="checkbox" value="Gluten-free"> Gluten-free</label>
+                <label><input type="checkbox" value="Dairy-free"> Dairy-free</label>
+                <label><input type="checkbox" value="Nut allergy"> Nut allergy</label>
+                <label><input type="checkbox" value="Shellfish allergy"> Shellfish allergy</label>
+              </div>
+              <label class="fl" for="diet">Anything else about food or allergies
+                <textarea id="diet" rows="3" placeholder="For example: one guest is coeliac, two do not eat red meat"></textarea>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Your details</legend>
+              <div class="row2">
+                <label class="fl" for="name">Name<input type="text" id="name" autocomplete="name" required></label>
+                <label class="fl" for="phone">Phone (optional)<input type="tel" id="phone" autocomplete="tel"></label>
+              </div>
+              <label class="fl" for="email">Email<input type="email" id="email" autocomplete="email" required></label>
+              <label class="fl" for="budget">Estimated budget (optional)
+                <input type="text" id="budget" placeholder="For example £500, or not sure yet">
+              </label>
+              <label class="fl" for="notes">Notes for the chef
+                <textarea id="notes" rows="3" placeholder="Occasion, kitchen size, anything we should know"></textarea>
+              </label>
+            </fieldset>
+
+            <div class="submit">
+              <button class="btn btn--primary" type="submit" id="submitBtn">Prepare my request</button>
+              <p class="hint">We reply with a menu and a price. You pay nothing through this page. A 50% deposit secures your date, and the rest is due the day before.</p>
+            </div>
+          </form>
+
+          <section class="sent" id="sent" tabindex="-1" hidden aria-labelledby="sentTitle">
+            <h3 id="sentTitle">Your request is ready to send</h3>
+            <p>This page cannot send email by itself. Copy the request below and send it to <span class="addr">Kandzkitchen@yahoo.com</span>, or use the email button if your device opens a mail app.</p>
+            <label class="fl" for="sentText">Your request
+              <textarea id="sentText" readonly rows="14"></textarea>
+            </label>
+            <div class="acts">
+              <button type="button" class="btn btn--primary" id="copyBtn">Copy request</button>
+              <a class="btn" id="mailBtn" href="#">Open in email</a>
+              <button type="button" class="btn" id="editBtn">Edit request</button>
+              <span class="hint" id="copyMsg" role="status"></span>
+            </div>
+          </section>
+        </div>
+
+        <aside class="docket" id="docket" aria-label="Order docket"></aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="reviews" style="padding-block:clamp(56px,9vw,112px)">
+    <div class="in">
+      <div class="shead">
+        <p class="eyebrow">Kind words</p>
+        <h2>What people say.</h2>
+        <p class="lede"><strong>5.0 stars on Airbnb</strong> from 4 reviews, plus messages from clients. <a href="https://www.airbnb.co.uk/services/6214720" target="_blank" rel="noopener">Read the Airbnb reviews</a></p>
+      </div>
+      <div class="rvs">
+        <figure class="rv"><blockquote>“Amazing experience from start to finish. The food was incredible, full of flavor, perfectly presented, and honestly one of the best private dining experiences we’ve had.”</blockquote><figcaption>Joshua · May 2026 · Airbnb</figcaption></figure>
+        <figure class="rv"><blockquote>“They went above and beyond to make the evening feel special, including catering perfectly for allergies and dietary requirements within the group without any fuss. The food was absolutely delicious, beautifully presented.”</blockquote><figcaption>Chloe · July 2026 · Airbnb</figcaption></figure>
+        <figure class="rv"><blockquote>“The food was absolutely delicious, and the entire process was effortless on our end. They took care of all the cleanup, leaving the kitchen spotless!”</blockquote><figcaption>Jake · January 2026 · Airbnb</figcaption></figure>
+        <figure class="rv"><blockquote>“Words cannot explain the level of joy and gratitude I have! The food was amazing… great flavor and preparation. The chef and her team were incredible! 10/10 would definitely recommend!”</blockquote><figcaption>Savina · April 2026 · Airbnb</figcaption></figure>
+        <figure class="rv"><blockquote>“Honestly, your food??? Impeccable. People were loving the food so much and even took food home and were complimenting it the next day!”</blockquote><figcaption>Event client</figcaption></figure>
+        <figure class="rv"><blockquote>“Thank you for your service on Valentine’s Day. The food was cooked to absolute perfection and we really enjoyed everything we ate. Overall amazing food and customer service, 10/10.”</blockquote><figcaption>Valentine’s Day client</figcaption></figure>
+        <figure class="rv"><blockquote>“Thank you so much to you all for an amazing meal and evening! The food, service, everything was amazing and thank you for leaving the kitchen spotless.”</blockquote><figcaption>Private dining client</figcaption></figure>
+        <figure class="rv"><blockquote>“That jollof rice was sooo delicious, my husband and I couldn’t get enough, even the boys loved it… Reminds me exactly of the stew in Nigeria. I loved it, I had to order again instantly.”</blockquote><figcaption>Repeat client</figcaption></figure>
+        <figure class="rv"><blockquote>“My mum was licking her fingers. She wants to order monthly.”</blockquote><figcaption>Meal prep client</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--alt" id="about" style="padding-block:clamp(56px,9vw,112px)">
+    <div class="in about">
+      <figure class="about-photo">
+        <img src="img/00-kandy.jpg" width="900" height="1125" loading="lazy" decoding="async" alt="Kandy, the chef behind KandzKitchen, smiling and stirring a pot in a chef's jacket">
+      </figure>
+      <div class="about-copy">
+        <p class="eyebrow">About</p>
+        <h2>Meet Kandy, the chef behind KandzKitchen.</h2>
+        <p>Food has always been about more than what’s on the plate. It’s about bringing people together, creating memories and making people feel at home.</p>
+        <p>I’m Kandy, the founder and chef behind KandzKitchen. With my Nigerian roots at the heart of my cooking, I bring together bold flavours, familiar favourites and inspiration from different cuisines to create food that people genuinely enjoy.</p>
+        <p>From comforting Nigerian classics and Afro-Caribbean favourites to Asian fusion and international dishes, I love exploring flavours, putting my own spin on dishes and creating menus that reflect the people I’m cooking for.</p>
+        <p>KandzKitchen was built around my passion for good food. Good food should feel special, whether it’s a family gathering, an office lunch, a celebration with friends or an intimate private dining experience at home.</p>
+        <p>I believe great food starts with understanding what people love. That’s why I take a personal approach to every booking, working with each client to create menus that suit their tastes, occasion and needs, rather than offering the same experience to everyone.</p>
+        <p>Whether I’m cooking for a small dinner party or catering for a larger event, my goal remains the same: to serve delicious food, create memorable experiences and leave people looking forward to the next time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="how" style="padding-block:clamp(56px,9vw,112px)">
+    <div class="in">
+      <div class="shead">
+        <p class="eyebrow">How it works</p>
+        <h2>How a booking works.</h2>
+      </div>
+      <ol class="steps">
+        <li><div><strong>Tell us the basics</strong><span>Date, guest numbers, postcode and anything people cannot eat.</span></div></li>
+        <li><div><strong>Get a menu and price</strong><span>We build the menu around your courses and your guests.</span></div></li>
+        <li><div><strong>Secure your date</strong><span>Pay a 50% deposit to reserve your date. The rest is due the day before.</span></div></li>
+        <li><div><strong>We cook</strong><span>We arrive 2 to 4 hours before you eat, depending on your menu and group size. We cook, serve and clear up.</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band" id="faq" style="padding-block:clamp(56px,9vw,112px)">
+    <div class="in">
+      <div class="shead">
+        <p class="eyebrow">Questions</p>
+        <h2>Before you book.</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>How much does it cost?</summary>
+          <p>Private dining starts from £65 per head, a chef's table from £80 per head, a private chef for your stay from £55 per head, meal prep from £250, and the seafood boil is £85 and serves 2 to 4 people. Everything else is priced once we know your date, numbers and menu. We confirm the price before you pay anything.</p>
+        </details>
+        <details>
+          <summary>Do you take Christmas orders?</summary>
+          <p>Yes. Christmas orders and parties are open, and the last orders are on 20 December. Send your enquiry early, because December dates fill up.</p>
+        </details>
+        <details>
+          <summary>How does payment work?</summary>
+          <p>A 50% deposit secures your date and the rest is due the day before your booking. If you book with less than 48 hours to go, the full amount is due up front.</p>
+        </details>
+        <details>
+          <summary>What if I need to cancel or change the date?</summary>
+          <p>Your deposit is non-refundable, because it holds your date and pays for planning and shopping. Here is how it works:</p>
+          <ul>
+            <li><strong>7 days or more before:</strong> move your booking to a new date once and your deposit carries over, or cancel and the deposit is kept.</li>
+            <li><strong>2 to 7 days before:</strong> the deposit is kept, plus the cost of any food already bought for your booking.</li>
+            <li><strong>Less than 48 hours before:</strong> the full price is due, because the shopping and prep are done.</li>
+          </ul>
+          <p>Seafood boils and large events can have stricter terms, because shellfish and bulk orders cannot be reused. We confirm this when we send your price.</p>
+        </details>
+        <details>
+          <summary>How much notice do you need?</summary>
+          <p>We can often cook with as little as 24 hours' notice. Send us your date and numbers and we will tell you straight away if we can do it.</p>
+        </details>
+        <details>
+          <summary>Do you cook for offices and businesses?</summary>
+          <p>Yes. Tell us how many people, which day, and whether it is a one-off or regular. We will put a menu and a price together.</p>
+        </details>
+        <details>
+          <summary>Can you cook where I am staying, like an Airbnb or holiday let?</summary>
+          <p>Yes. Send us the address, the dates and how many people are staying, and we will plan the menu around the kitchen.</p>
+        </details>
+        <details>
+          <summary>Are you insured and food safety trained?</summary>
+          <p>Yes. Kandy holds Level 2 food hygiene and allergen awareness certificates, and KandzKitchen is insured. Tell us about any allergies when you book and we adjust every course.</p>
+        </details>
+        <details>
+          <summary>Do I need a big kitchen?</summary>
+          <p>No. We need a working oven, a hob, a fridge and clear counter space. We bring our knives and pans. Plates and serving dishes are a help if you have them, so tell us what is in the kitchen and we will plan around it.</p>
+        </details>
+        <details>
+          <summary>How do you handle allergies?</summary>
+          <p>Tell us when you book. We plan the menu around every allergy, keep ingredients separate on the day, and give you a printed allergen sheet for each course.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--deep" id="contact" style="padding-block:clamp(56px,9vw,112px)">
+    <div class="in contact">
+      <div style="display:grid;gap:14px">
+        <p class="eyebrow">Contact</p>
+        <h2>Ask before you book.</h2>
+        <p class="lede">Not sure which service fits? Message us on WhatsApp or Instagram, or send an email, and we will help you pick. We cook in London and surrounding areas, and abroad on request.</p>
+      </div>
+      <dl>
+        <div><dt>Email</dt><dd class="sel">Kandzkitchen@yahoo.com</dd></div>
+        <div><dt>Phone</dt><dd class="sel">07404 504664</dd></div>
+        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/447404504664" target="_blank" rel="noopener">Message 07404 504664</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/kandzkitchen" target="_blank" rel="noopener">@kandzkitchen</a></dd></div>
+        <div><dt>TikTok</dt><dd><a href="https://www.tiktok.com/@kandzkitchenn" target="_blank" rel="noopener">@kandzkitchenn</a></dd></div>
+        <div><dt>Snapchat</dt><dd><a href="https://www.snapchat.com/add/kandzkitchen" target="_blank" rel="noopener">kandzkitchen</a></dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button type="button" class="lb-close" id="lbClose" aria-label="Close photo">&times;</button>
+  <figure class="lb-fig"><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+</div>
+
+<footer class="foot">
+  <div class="in">
+    <span>© 2026 KandzKitchen · Bringing Food You Love</span>
+    <span><a href="https://wa.me/447404504664" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://www.instagram.com/kandzkitchen" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@kandzkitchenn" target="_blank" rel="noopener">TikTok</a> · <a href="https://www.snapchat.com/add/kandzkitchen" target="_blank" rel="noopener">Snapchat</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+  var EMAIL='Kandzkitchen@yahoo.com';
+  var BRAND='KandzKitchen';
+  var SERVICES={
+    dinner:{name:'Private dining',price:65,min:2,def:4,courses:true,unit:'guests',hint:'2 or more guests, no upper limit.'},
+    chef:{name:'Chef’s table',price:80,min:2,def:6,courses:true,unit:'guests',hint:'Any group size.'},
+    seafood:{name:'Seafood boil',price:85,exact:true,min:1,def:1,courses:false,unit:'boils',hint:'Each boil serves 2 to 4 people. For a bigger group, order more than one.',sub:function(g){return gbp(85)+' per boil. Each boil serves 2 to 4 people.';},est:function(g,base,r){return gbp(base)+' ('+g+(g===1?' boil':' boils')+' at £85, each serves 2 to 4 people'+(r?', plus ramen noodles at £3.50 per boil':'')+')';}},
+    corporate:{name:'Corporate and office',price:null,min:1,def:20,courses:false,unit:'people',hint:'Any number of people.'},
+    event:{name:'Event catering',price:null,min:1,def:40,courses:false,unit:'guests',hint:'Any number of guests.'},
+    airbnb:{name:'Private chef for your stay',price:55,min:1,def:6,courses:true,unit:'guests',hint:'Any number of guests.'},
+    mealprep:{name:'Meal prep',price:null,flat:250,flatDetail:' · starting price',flatSub:'meal prep starts from £250, final price depends on your order',flatEst:'From £250 (meal prep starting price)',min:1,def:10,courses:false,unit:'portions',hint:'Any number of portions.'}
+  };
+  var MENUS=[
+    {id:'dinner',tab:'Private dining',title:'Sample dinner menu',meta:'Choose 2 to 7 or more courses · from £65 per head · any number of guests',
+     note:'Pick any number of courses, from two to seven or more. These dishes are examples. We build your menu around your guests, and a chef\'s table is the premium version.',
+     pick:'dinner',
+     items:[
+      ['To start','Scallops in garlic butter','Served in the shell with fresh herbs.',[]],
+      ['To start','Prawns with mango salsa','Grilled prawns, rice noodles, cucumber and mango.',[]],
+      ['To start','Moi moi with egg','Steamed bean pudding.',[]],
+      ['To start','Tomato and mozzarella with balsamic','',[]],
+      ['Main','Glazed chops on creamy mash','A rich glaze.',[]],
+      ['Main','Roast chicken in gravy with parsley','',[]],
+      ['Main','Langoustine on garlic spaghetti','',[]],
+      ['Main','Creamy mushroom risotto','',[]],
+      ['Main','Tagliatelle carbonara','',[]],
+      ['Main, African','Jollof rice with glazed chicken','Fried plantain on the side.',[]],
+      ['Main, African','Asun','Peppered goat meat.',[]],
+      ['Main, African','Light soup with fufu','Assorted goat meat.',[]],
+      ['Main, African','Abula','Amala with gbegiri, ewedu and assorted meat stew.',[]],
+      ['To finish','Tiramisu','Cocoa-dusted and served chilled.',[]],
+      ['To finish','Lemon dessert pots','Topped with citrus and edible flowers.',[]]
+     ]},
+    {id:'seafood',tab:'Seafood boil',title:'The seafood boil',meta:'£85 per boil · serves 2 to 4 people',
+     note:'A big platter for the table. Each boil serves 2 to 4 people, so order two for a group of eight. Choose your sauce and add ramen noodles if you like.',
+     pick:'seafood',
+     items:[
+      ['In the boil','Mussels','',[]],
+      ['In the boil','Lobster','',[]],
+      ['In the boil','Crab','',[]],
+      ['In the boil','King prawns','',[]],
+      ['In the boil','Boiled eggs','',[]],
+      ['In the boil','Smoked sausage','',[]],
+      ['In the boil','Corn on the cob','',[]],
+      ['Sauce','Cajun garlic butter, butter sauce or onion garlic butter sauce','Choose one.',[]],
+      ['Add-on','Ramen noodles','Optional, £3.50 extra per boil.',[]]
+     ]},
+    {id:'corporate',tab:'Corporate and office',title:'Sample office menu',meta:'Price on request · any number of people',
+     note:'For working lunches, team days and staff events, as boxes, sharing platters or a full buffet. See Sandwiches and finger food for more. Tell us your numbers and budget.',
+     pick:'corporate',
+     items:[
+      ['Hot dishes','Jollof rice','Cooked in bulk, served hot.',[]],
+      ['Hot dishes','Jerk chicken','',[]],
+      ['Hot dishes','Chickpea curry with white rice','',[]],
+      ['Hot dishes','Chicken katsu curry','Crumbed chicken, curry sauce and rice.',[]],
+      ['Sandwiches','Ham and cheese with mustard sauce','',[]],
+      ['Sandwiches','Jerk chicken with slaw and mango mayo','',[]],
+      ['Sandwiches','Egg mayo and cress','',[]],
+      ['Sandwiches','Chickpea curry wrap','',[]],
+      ['Finger food','Hot honey chicken wings','',[]],
+      ['Finger food','Puff puff','',[]],
+      ['Finger food','Plantain chips with pepper dip','',[]],
+      ['Finger food','Moi moi bites','',[]],
+      ['Sides','Spiced quinoa with greens','',[]],
+      ['Sides','Chilli sesame cucumber salad','',[]],
+      ['Sweet','Tiramisu pots','One each, ready to serve.',[]]
+     ]},
+    {id:'event',tab:'Events and parties',title:'Party and buffet sample',meta:'Price on request · any number of guests',
+     note:'A starting point for birthdays, baby showers, weddings and parties. We scale the quantities to your guest list.',
+     pick:'event',
+     items:[
+      ['Rice','Smoky jollof rice','Cooked for a crowd.',[]],
+      ['Mains','BBQ chicken','Grilled over charcoal.',[]],
+      ['Mains','Hot honey chicken wings','',[]],
+      ['Mains','Asun','Peppered goat meat.',[]],
+      ['Mains','Cottage pie','',[]],
+      ['Finger food','Peppered chicken skewers','',[]],
+      ['Finger food','Mini meat pies and sausage rolls','',[]],
+      ['Finger food','Jollof rice arancini','',[]],
+      ['Sides','Moi moi','Steamed bean pudding.',[]],
+      ['Sides','Fried plantain','Sweet and caramelised.',[]],
+      ['Snacks','Puff puff','Golden, soft and fluffy.',[]],
+      ['Sweet','Tiramisu pots','One each, ready to serve.',[]],
+      ['Sweet','Cupcakes','A box for the table.',[]]
+     ]},
+    {id:'finger',tab:'Sandwiches and finger food',title:'Sandwiches and finger food',meta:'Price on request · for offices, parties and events',
+     note:'Pick what you like, or ask us for something else. We make up platters and boxes to suit your numbers.',
+     pick:'corporate',
+     items:[
+      ['Sandwiches','Ham and cheese with mustard sauce','',[]],
+      ['Sandwiches','Jerk chicken with slaw and mango mayo','',[]],
+      ['Sandwiches','Hot honey chicken with crunchy lettuce','',[]],
+      ['Sandwiches','Coronation chicken','',[]],
+      ['Sandwiches','Chicken katsu with curry mayo and pickled cucumber','',[]],
+      ['Sandwiches','Suya beef with onions and tomato','',[]],
+      ['Sandwiches','Roast beef with horseradish and rocket','',[]],
+      ['Sandwiches','Egg mayo and cress','',[]],
+      ['Sandwiches','Tuna sweetcorn melt','',[]],
+      ['Sandwiches','Prawn mayo with avocado','',[]],
+      ['Sandwiches','Smoked salmon and cream cheese','',[]],
+      ['Sandwiches','Cheese and caramelised onion toastie','',[]],
+      ['Sandwiches','Mini burger sliders with caramelised onions','',[]],
+      ['Sandwiches','Club sandwiches','',[]],
+      ['Wraps','Chickpea curry wrap','',[]],
+      ['Wraps','Falafel and hummus wrap','',[]],
+      ['Wraps','Caprese with basil pesto','',[]],
+      ['Wraps','Fried plantain, avocado and spiced bean','',[]],
+      ['Finger food','Hot honey chicken wings','',[]],
+      ['Finger food','Peppered chicken skewers','',[]],
+      ['Finger food','Suya beef skewers','',[]],
+      ['Finger food','Asun on cocktail sticks','',[]],
+      ['Finger food','Jollof rice arancini','',[]],
+      ['Finger food','Moi moi bites','',[]],
+      ['Finger food','Mini meat pies and sausage rolls','',[]],
+      ['Finger food','Mini fish pies','',[]],
+      ['Finger food','Pepper prawn skewers','',[]],
+      ['Finger food','Garlic butter prawns on toast','',[]],
+      ['Finger food','Crispy chicken bites with dipping sauces','',[]],
+      ['Finger food','Samosas and spring rolls','',[]],
+      ['Finger food','Plantain chips with pepper dip','',[]],
+      ['Finger food','Yam fries or sweet potato fries','',[]],
+      ['Finger food','Mini jerk chicken tacos','',[]],
+      ['Finger food','Cheese and onion tartlets','',[]],
+      ['Finger food','Mini quiches','',[]],
+      ['Finger food','Stuffed mushrooms','',[]],
+      ['Finger food','Bruschetta with tomato and basil','',[]],
+      ['Finger food','Caprese skewers','',[]],
+      ['Sweet','Puff puff with chocolate dip','',[]],
+      ['Sweet','Mini tiramisu pots','',[]],
+      ['Sweet','Lemon dessert pots','',[]],
+      ['Sweet','Mini cupcakes','',[]],
+      ['Sweet','Mini doughnuts','',[]],
+      ['Sweet','Mini profiteroles','',[]],
+      ['Sweet','Fruit skewers','',[]],
+      ['Sweet','Chin chin','',[]]
+     ]},
+    {id:'mealprep',tab:'Meal prep',title:'Meal prep',meta:'From £250 · any number of portions',
+     note:'Meals cooked and packed in containers, ready to heat and eat. Tell us what you like and how many portions you need.',
+     pick:'mealprep',
+     items:[
+      ['Rice','Jollof rice','',[]],
+      ['Chicken','Roast chicken thighs','',[]],
+      ['Curry','Chicken katsu curry','',[]],
+      ['Bakes','Cottage pie','',[]],
+      ['Pasta','Tomato spaghetti and meatballs','',[]],
+      ['Sides','Fried plantain','',[]],
+      ['Noodles','Vegetable stir-fry noodles','',[]]
+     ]},
+    {id:'desserts',tab:'Desserts',title:'Desserts and sweet things',meta:'Price on request · add to any booking',
+     note:'Plated for a dinner or boxed for a party.',
+     pick:'event',
+     items:[
+      ['Chilled','Tiramisu','Cocoa-dusted and served chilled.',[]],
+      ['Chilled','Lemon dessert pots','Topped with citrus and edible flowers.',[]],
+      ['Plated','Chocolate and berry tart','Whipped cream and berry compote.',[]],
+      ['Plated','Profiteroles','Chocolate drizzle.',[]],
+      ['Fried','Puff puff','Golden, soft and fluffy.',[]],
+      ['Baked','Oreo doughnuts','Vanilla glaze and cookie crumb.',[]],
+      ['Baked','Cupcakes','A box for the table.',[]]
+     ]}
+  ];
+
+  function $(s,r){return (r||document).querySelector(s);}
+  function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
+  function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function gbp(n){var r=Math.round(n*100)/100;return '£'+r.toLocaleString('en-GB',{minimumFractionDigits:(r%1?2:0),maximumFractionDigits:2});}
+
+  function uw(sv,n){var m={guests:'guest',people:'person',portions:'portion',boils:'boil'};return n===1?(m[sv.unit]||sv.unit):sv.unit;}
+
+  /* menus */
+  var tabsEl=$('#tabs'), panelsEl=$('#panels');
+  tabsEl.innerHTML=MENUS.map(function(m,i){
+    return '<button type="button" class="tab" role="tab" id="tab-'+m.id+'" aria-controls="panel-'+m.id+'" aria-selected="'+(i===0)+'" tabindex="'+(i===0?0:-1)+'" data-id="'+m.id+'">'+esc(m.tab)+'</button>';
+  }).join('');
+  panelsEl.innerHTML=MENUS.map(function(m,i){
+    return '<div role="tabpanel" id="panel-'+m.id+'" aria-labelledby="tab-'+m.id+'"'+(i===0?'':' hidden')+'>'+
+      '<div class="mhead"><h3>'+esc(m.title)+'</h3><p class="mmeta">'+esc(m.meta)+'</p></div>'+
+      '<p class="mnote">'+esc(m.note)+'</p>'+
+      m.items.map(function(d){
+        return '<div class="dish"><span class="course">'+esc(d[0])+'</span><div><div class="name">'+esc(d[1])+'</div>'+(d[2]?'<div class="desc">'+esc(d[2])+'</div>':'')+'</div>'+
+          (d[3].length?'<div class="tags">'+d[3].map(function(t){return '<span class="tag">'+t+'</span>';}).join('')+'</div>':'')+'</div>';
+      }).join('')+
+      '<div class="mfoot"><p class="legend">Tell us about allergies and dietary needs when you book. We adjust every course.</p>'+
+      '<a class="btn btn--primary" href="#order" data-pick="'+m.pick+'">Order this menu</a></div></div>';
+  }).join('');
+
+  function selectTab(id,focus){
+    $$('.tab').forEach(function(b){
+      var on=b.getAttribute('data-id')===id;
+      b.setAttribute('aria-selected',on?'true':'false');
+      b.tabIndex=on?0:-1;
+      if(on&&focus)b.focus();
+    });
+    MENUS.forEach(function(m){$('#panel-'+m.id).hidden=(m.id!==id);});
+  }
+  tabsEl.addEventListener('click',function(e){
+    var b=e.target.closest('.tab'); if(b)selectTab(b.getAttribute('data-id'),false);
+  });
+  tabsEl.addEventListener('keydown',function(e){
+    var ids=MENUS.map(function(m){return m.id;});
+    var cur=ids.indexOf(document.activeElement.getAttribute('data-id'));
+    if(cur<0)return;
+    var next=null;
+    if(e.key==='ArrowRight')next=(cur+1)%ids.length;
+    else if(e.key==='ArrowLeft')next=(cur-1+ids.length)%ids.length;
+    else if(e.key==='Home')next=0;
+    else if(e.key==='End')next=ids.length-1;
+    if(next!==null){e.preventDefault();selectTab(ids[next],true);}
+  });
+
+  /* order form */
+  var form=$('#orderForm'), guestsEl=$('#guests'), coursesEl=$('#courses'), dateEl=$('#date'), slotEl=$('#slot'), postEl=$('#postcode');
+  var docket=$('#docket'), sent=$('#sent'), current=null;
+
+  function svcKey(){var r=$('input[name=service]:checked');return r?r.value:'dinner';}
+  function getGuests(){
+    var s=SERVICES[svcKey()], n=parseInt(guestsEl.value,10);
+    if(isNaN(n))n=s.def;
+    return Math.max(s.min,n);
+  }
+  function getCourses(){
+    var n=parseInt(coursesEl.value,10);
+    if(isNaN(n))n=4;
+    return Math.max(2,n);
+  }
+  function applyService(reset){
+    var key=svcKey(), s=SERVICES[key];
+    guestsEl.min=s.min;
+    guestsEl.value=reset?s.def:getGuests();
+    $('#guestHint').textContent=s.hint;
+    $('#guestsLabel').textContent='Number of '+s.unit;
+    $('#coursesField').hidden=!s.courses;
+    $('#corpFields').hidden=(key!=='corporate');
+    $('#seafoodFields').hidden=(key!=='seafood');
+    render();
+  }
+  function fmtDate(v){
+    var d=new Date(v+'T12:00:00');
+    if(isNaN(d.getTime()))return '';
+    return d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  }
+  function pad(n){return n<10?'0'+n:''+n;}
+  (function setMinDate(){
+    var d=new Date(); d.setDate(d.getDate()+1);
+    dateEl.min=d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+  })();
+
+  function render(){
+    var key=svcKey(), s=SERVICES[key], g=getGuests(), c=getCourses();
+    var base=s.price?s.price*g:(s.flat||null);
+    var baseDetail=g+' '+uw(s,g)+(s.price?' × '+gbp(s.price):(s.flat?s.flatDetail:''));
+    if(s.courses)baseDetail=c+' courses · '+baseDetail;
+    var lines=[[s.name,baseDetail,base]];
+    var extras=[];
+    var ramenOn=false;
+    if(key==='seafood'){
+      lines.push(['Sauce',$('#sauce').value]);
+      if($('#ramen').value==='Add ramen noodles'){
+        ramenOn=true;
+        lines.push(['Ramen noodles',g+' × '+gbp(3.5),3.5*g]);
+        base+=3.5*g;
+        extras.push('Ramen noodles ('+gbp(3.5*g)+')');
+      }
+    }
+    $$('.extra').forEach(function(row){
+      var on=$('.x-on',row), qtyRow=$('.x-qtyrow',row);
+      if(qtyRow)qtyRow.hidden=!on.checked;
+      if(!on.checked)return;
+      var name=row.getAttribute('data-name'), kind=row.getAttribute('data-kind');
+      var detail;
+      if(kind==='pp'){detail='for '+g+' '+uw(s,g);}
+      else{
+        var q=Math.max(1,parseInt($('.x-qty',row).value,10)||1);
+        detail=q+' '+row.getAttribute('data-unit');
+      }
+      lines.push([name,detail,null]);
+      extras.push(name+' ('+detail+')');
+    });
+    var dateTxt=dateEl.value?fmtDate(dateEl.value):'';
+    var slot=slotEl.value;
+    var post=postEl.value.trim();
+    var totalLabel=base?(s.exact?'Estimate':'From'):'Price';
+    var totalValue=base?gbp(base):'Quote';
+    var sub=s.sub?s.sub(g):(s.price?'from '+gbp(s.price)+' per head for '+g+' '+uw(s,g)+'. We confirm your exact price when we reply.':(s.flat?s.flatSub:'We price this after we hear from you'));
+    docket.innerHTML=
+      '<h3>Order docket</h3>'+
+      '<p class="dk-ref">Draft · not yet sent</p>'+
+      '<div class="dk-meta"><div><span>When</span>'+esc(dateTxt?dateTxt+', '+slot.toLowerCase():'Date to choose')+'</div>'+
+      '<div><span>Where</span>'+esc(post||'Postcode to add')+'</div></div>'+
+      '<div class="dk-lines">'+lines.map(function(l){
+        return '<div class="dk-line"><div>'+esc(l[0])+'<small>'+esc(l[1])+'</small></div><b>'+(l[2]===undefined?'':(l[2]===null?'On request':gbp(l[2])))+'</b></div>';
+      }).join('')+'</div>'+
+      '<div class="dk-total"><span>'+totalLabel+'</span><strong>'+totalValue+'</strong></div>'+
+      '<p class="dk-sub">'+esc(sub)+'</p>'+
+      '<p class="dk-note">The final price depends on your courses, extras and travel. We confirm it before you pay anything.</p>';
+    current={key:key,service:s.name,guests:g,unit:uw(s,g),courses:s.courses?c:null,date:dateTxt,slot:slot,post:post,extras:extras,
+             estimate:s.est?s.est(g,base,ramenOn):s.price?('From '+gbp(base)+' ('+gbp(s.price)+' per head)'):(s.flat?s.flatEst:'To be quoted')};
+  }
+
+  $$('input[name=service]').forEach(function(r){r.addEventListener('change',function(){applyService(true);});});
+  guestsEl.addEventListener('input',render);
+  guestsEl.addEventListener('change',function(){guestsEl.value=getGuests();render();});
+  coursesEl.addEventListener('change',function(){coursesEl.value=getCourses();render();});
+  $$('.stepper button').forEach(function(b){
+    b.addEventListener('click',function(){
+      guestsEl.value=Math.max(SERVICES[svcKey()].min,getGuests()+parseInt(b.getAttribute('data-step'),10));
+      render();
+    });
+  });
+  form.addEventListener('input',render);
+  form.addEventListener('change',render);
+
+  $$('[data-pick]').forEach(function(a){
+    a.addEventListener('click',function(){
+      var r=$('input[name=service][value='+a.getAttribute('data-pick')+']');
+      if(r){r.checked=true;applyService(true);}
+    });
+  });
+
+  function buildSummary(){
+    render();
+    var diets=$$('#diets input:checked').map(function(c){return c.value;});
+    var dietNote=$('#diet').value.trim();
+    var notes=$('#notes').value.trim();
+    var phone=$('#phone').value.trim();
+    var L=[];
+    L.push('Booking request for '+BRAND);
+    L.push('');
+    L.push('Service: '+current.service+', '+current.guests+' '+current.unit+(current.courses?', '+current.courses+' courses':''));
+    if(current.key==='corporate'){
+      var co=$('#company').value.trim();
+      L.push('Company: '+(co||'not given')+' ('+$('#freq').value.toLowerCase()+')');
+    }
+    L.push('Date: '+(current.date||'to be agreed')+', '+current.slot.toLowerCase());
+    L.push('Postcode: '+(current.post||'to be added'));
+    L.push('Extras: '+(current.extras.length?current.extras.join('; '):'none'));
+    L.push('Dietary needs: '+(diets.length?diets.join(', '):'none listed')+(dietNote?'. '+dietNote:''));
+    L.push('Estimate: '+current.estimate);
+    if(current.key==='seafood'){
+      L.push('Sauce: '+$('#sauce').value);
+      L.push('Ramen noodles: '+($('#ramen').value==='Add ramen noodles'?'yes':'no'));
+    }
+    var budget=$('#budget').value.trim();
+    if(budget)L.push('Budget: '+budget);
+    L.push('');
+    L.push('Name: '+$('#name').value.trim());
+    L.push('Email: '+$('#email').value.trim());
+    if(phone)L.push('Phone: '+phone);
+    if(notes){L.push('');L.push('Notes: '+notes);}
+    return L.join('\n');
+  }
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var text=buildSummary();
+    $('#sentText').value=text;
+    $('#mailBtn').href='mailto:'+EMAIL+'?subject='+encodeURIComponent('Booking request: '+current.service+', '+current.guests+' '+current.unit)+'&body='+encodeURIComponent(text);
+    $('#copyMsg').textContent='';
+    sent.hidden=false;
+    sent.scrollIntoView({block:'start'});
+    sent.focus({preventScroll:true});
+  });
+  $('#copyBtn').addEventListener('click',function(){
+    var ta=$('#sentText'), msg=$('#copyMsg');
+    function fallback(){ta.focus();ta.select();msg.textContent='Text selected. Copy it with your device’s copy command.';}
+    try{
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(ta.value).then(function(){msg.textContent='Copied.';},fallback);
+      }else{fallback();}
+    }catch(err){fallback();}
+  });
+  $('#editBtn').addEventListener('click',function(){
+    sent.hidden=true;
+    form.scrollIntoView({block:'start'});
+  });
+
+  var gFigs=$$('#gallery-grid figure'), gFilter='all', gExpanded=false, G_LIMIT=12;
+  function renderGallery(){
+    var shown=0, total=0;
+    gFigs.forEach(function(f){
+      var cats=(f.getAttribute('data-cat')||'').split(' ');
+      if(gFilter!=='all'&&cats.indexOf(gFilter)<0){f.hidden=true;return;}
+      total++;
+      var show=(gFilter!=='all')||gExpanded||shown<G_LIMIT;
+      if(show)shown++;
+      f.hidden=!show;
+    });
+    $('#moreWrap').hidden=!(gFilter==='all'&&!gExpanded&&total>G_LIMIT);
+    $$('.chip').forEach(function(c){c.setAttribute('aria-pressed',c.getAttribute('data-f')===gFilter?'true':'false');});
+  }
+  $$('.chip').forEach(function(c){
+    c.addEventListener('click',function(){gFilter=c.getAttribute('data-f');renderGallery();});
+  });
+  $('#moreBtn').addEventListener('click',function(){gExpanded=true;renderGallery();});
+  renderGallery();
+
+  var lb=$('#lb'), lbImg=$('#lbImg'), lbCap=$('#lbCap'), lbOpener=null;
+  function openLb(img){
+    var cap=img.parentNode.querySelector('figcaption');
+    lbImg.src=img.currentSrc||img.src; lbImg.alt=img.alt;
+    lbCap.textContent=cap?cap.textContent:'';
+    lbOpener=img; lb.hidden=false;
+    $('#lbClose').focus();
+  }
+  function closeLb(){
+    lb.hidden=true; lbImg.removeAttribute('src');
+    if(lbOpener&&lbOpener.focus)lbOpener.focus();
+  }
+  $$('#gallery img').forEach(function(img){
+    img.tabIndex=0;
+    img.addEventListener('click',function(){openLb(img);});
+    img.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openLb(img);}});
+  });
+  $('#lbClose').addEventListener('click',closeLb);
+  lb.addEventListener('click',function(e){if(e.target===lb)closeLb();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!lb.hidden)closeLb();});
+
+  /* sticky header: expose its height for anchor offsets and the docket */
+  var hdr=$('.top-band');
+  function setHdr(){document.documentElement.style.setProperty('--hdr',hdr.offsetHeight+'px');}
+  function onScroll(){hdr.classList.toggle('is-stuck',window.scrollY>4);}
+  setHdr(); onScroll();
+  window.addEventListener('resize',setHdr);
+  window.addEventListener('scroll',onScroll,{passive:true});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(setHdr);
+
+  /* hero dish slider */
+  var SLIDES=[
+    ['img/09-seafood-boil.jpg','Crab legs, lobster tail and corn in a spiced sauce on a white platter','Seafood boil with crab, lobster and corn'],
+    ['img/06-jollof-okra-beef.jpg','Jollof rice, okra soup and beef stew','Jollof rice, okra soup and beef stew'],
+    ['img/32-scallops.jpg','Scallops in garlic butter','Scallops in garlic butter'],
+    ['img/31-langoustine-spaghetti.jpg','Langoustine on garlic spaghetti','Langoustine on garlic spaghetti'],
+    ['img/20-pepper-stew-meat.jpg','Asun, peppered goat meat','Asun (peppered goat meat)'],
+    ['img/29-prawns-mango.jpg','Prawns with mango salsa on rice noodles','Prawns with mango salsa on rice noodles'],
+    ['img/05-roast-chicken-thighs.jpg','Glazed roast chicken thighs','Glazed roast chicken thighs'],
+    ['img/16-mushroom-risotto.jpg','Creamy mushroom risotto','Creamy mushroom risotto'],
+    ['img/18-tiramisu-lemon.jpg','Tiramisu and lemon desserts','Tiramisu and lemon desserts']
+  ];
+  var hsImg=$('#hsImg'), hsCap=$('#hsCap'), hsCount=$('#hsCount'), hsIdx=0, hsToken=0;
+  function preload(i){var im=new Image();im.src=SLIDES[(i+SLIDES.length)%SLIDES.length][0];return im;}
+  function goSlide(i){
+    hsIdx=(i+SLIDES.length)%SLIDES.length;
+    var s=SLIDES[hsIdx], tok=++hsToken, im=preload(hsIdx);
+    hsCap.textContent=s[2];
+    hsCount.textContent=(hsIdx+1)+' / '+SLIDES.length;
+    hsImg.classList.add('is-out');
+    function swap(){
+      if(tok!==hsToken)return;
+      hsImg.src=s[0]; hsImg.alt=s[1];
+      hsImg.classList.remove('is-out');
+      preload(hsIdx+1); preload(hsIdx-1);
+    }
+    if(im.complete)setTimeout(swap,140);else{im.onload=swap;im.onerror=swap;}
+  }
+  $('#hsPrev').addEventListener('click',function(){goSlide(hsIdx-1);});
+  $('#hsNext').addEventListener('click',function(){goSlide(hsIdx+1);});
+  $('#heroShow').addEventListener('keydown',function(e){
+    if(e.key==='ArrowLeft'){e.preventDefault();goSlide(hsIdx-1);}
+    else if(e.key==='ArrowRight'){e.preventDefault();goSlide(hsIdx+1);}
+  });
+  var tx=null, ty=null, stage=$('#hsStage');
+  stage.addEventListener('touchstart',function(e){var t=e.touches[0];tx=t.clientX;ty=t.clientY;},{passive:true});
+  stage.addEventListener('touchend',function(e){
+    if(tx===null)return;
+    var t=e.changedTouches[0], dx=t.clientX-tx, dy=t.clientY-ty; tx=null;
+    if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy))goSlide(hsIdx+(dx<0?1:-1));
+  },{passive:true});
+  preload(1); preload(-1);
+
+  applyService(true);
+})();
+</script>
+
+</body></html>
